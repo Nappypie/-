@@ -1,6 +1,5 @@
 local cloneref = cloneref or function(x) return x end
 
-local HttpService = cloneref(game:GetService("HttpService"))
 local MarketplaceService = cloneref(game:GetService("MarketplaceService"))
 
 local Compkiller = loadstring(game:HttpGet("https://raw.githubusercontent.com/4lpaca-pin/CompKiller/refs/heads/main/src/source.luau"))()
@@ -21,7 +20,6 @@ local GAMES = {
     ["Forge"] = {id = 7671049560, script = "https://raw.githubusercontent.com/Nappypie/Happy/refs/heads/main/obfuscated_script-1766713626679.lua.txt"},
     ["Lootify"] = {id = 5682590751, script = "https://raw.githubusercontent.com/Cobru1/Arqel/refs/heads/main/Lootify.luau"},
     ["Be a Lucky Block"] = {id = 9787206684, script = "https://raw.githubusercontent.com/Cobruhehe/Arqel/refs/heads/main/bealuckyblock.luau"},
-
 }
 
 local match = nil
@@ -40,6 +38,6 @@ if match then
     end
 else
     local gameName = "Unknown"
-    pcall(function() gameName = MarketplaceService:GetProductInfo(game.GameId, Enum.InfoType.Game).Name end)
+    pcall(function() gameName = MarketplaceService:GetProductInfo(game.PlaceId).Name end)
     Notifier.new({Title = "Unsupported Game", Content = gameName .. " not supported", Duration = 3, Icon = "rbxassetid://95721401302279"})
 end
