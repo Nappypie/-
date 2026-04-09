@@ -19,7 +19,7 @@ local GAMES = {
     ["Build a Bunker"] = {id = 7738927312, script = "https://raw.githubusercontent.com/Cobru1/Arqel/refs/heads/main/Build%20a%20bunker.luau"},
     ["Forge"] = {id = 7671049560, script = "https://raw.githubusercontent.com/Nappypie/Happy/refs/heads/main/obfuscated_script-1766713626679.lua.txt"},
     ["Lootify"] = {id = 5682590751, script = "https://raw.githubusercontent.com/Cobru1/Arqel/refs/heads/main/Lootify.luau"},
-    ["Be a Lucky Block"] = {id = 9787206684, script = "https://raw.githubusercontent.com/Cobruhehe/Arqel/refs/heads/main/bealuckyblock.luau"},
+    ["Be a Lucky Block"] = {id = 9787206684, script = "https://raw.githubusercontent.com/Cobruhehe/Arqel/refs/heads/main/script/luckyblock.luau"},
 }
 
 local match = nil
